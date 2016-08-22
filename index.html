@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John Rees</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
+  <style type="text/css">
+    @font-face {font-family: 'Gilroy-ExtraBold';src: url('webfonts/31F10D_0_0.eot');src: url('webfonts/31F10D_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31F10D_0_0.woff2') format('woff2'),url('webfonts/31F10D_0_0.woff') format('woff'),url('webfonts/31F10D_0_0.ttf') format('truetype');}
+    * {
+      font-family: Gilroy-ExtraBold;
+      font-weight: normal;
+      font-style: normal;
+    }
+    h1 {
+      color: #FFF;
+      line-height: 1;
+    }
+    a {
+      text-decoration: none;
+      color: #A87AFB;
+      transition: all 0.5s;
+      padding: 5px;
+    }
+    a:hover {
+      color: #000;
+      background-color: #FFFF63;
+    }
+    body {
+      font-size: 20px;
+      background: #222;
+      color: #FFF;
+      -webkit-font-smoothing: antialiased;
+      padding: 20px;
+      line-height: 2;
+    }
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    canvas {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #main {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <canvas resize="true" id="canvas-1"></canvas>
+  <div id="main" role="main">
+    <h1>John Rees</h1>
+    <ul>
+      <li><a href="http://www.twitter.com/john_rees">twitter.com/john_rees</a></li>
+      <li><a href="http://www.github.com/johnrees">github.com/johnrees</a></li>
+    </ul>
+  </div>
+  <script type="text/paperscript" canvas="canvas-1" src="viz.js"></script>
+</body>
+</html>
