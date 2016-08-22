@@ -17,7 +17,7 @@ function initializePath() {
   path.add(view.bounds.bottomLeft);
   path.add(new Point(0, height))
   for (var i = 1; i < points; i++) {
-    var point = new Point(width / (points-1) * i, center.y);
+    var point = new Point(width / (points-2) * i, center.y);
     path.add(point);
   }
   // path.add(new Point(width, height))
